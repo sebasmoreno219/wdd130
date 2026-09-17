@@ -4,6 +4,12 @@
     --border-color: solid black;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: darkblue;
     padding: var(--padding);
@@ -25,6 +31,7 @@ main img {
     border: 1px var(--border-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -54,4 +61,19 @@ footer {
     margin-top: 15px;
     border-top: 1px var(--border-color);
     text-align: center;
+}
+
+/* Class Selectos */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: black;
+}
+
+aside h2 {
+    position: absolute;
+    /* top: 0; */
+    left: 205px;
 }
