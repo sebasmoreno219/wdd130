@@ -1,8 +1,6 @@
 :root {
     --primary-color: #055a05;
-    --secondary-color: #f4a261;
     --accent1-color: #264653;
-    --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial. Helvetica, sans-serif;
 }
@@ -53,7 +51,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -71,7 +69,7 @@ h2 {
     color: #fff;
 }
 
-article {
+.hero article {
     position: absolute;
     bottom: 10px;
     width: 75%;
@@ -83,7 +81,6 @@ article {
 .hero article img {
     border: black;
     margin: 8px;
-    box-shadow: gray;
     float: right;
     width: 125px;
 }
