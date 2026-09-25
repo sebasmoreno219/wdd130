@@ -96,7 +96,7 @@ header {
     grid-template-columns: auto 1fr;
     align-items: center;
     padding: 10px 40px;
-    background-color: lightblue;
+    background-color: var(--accent1-color);
 }
 
 .nav-links {
