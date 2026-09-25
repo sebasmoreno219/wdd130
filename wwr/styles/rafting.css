@@ -12,6 +12,11 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
@@ -49,6 +54,7 @@ article {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .hero h1 {
@@ -83,4 +89,109 @@ h2 {
     margin: 8px;
     float: right;
     width: 125px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: lightblue;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    background-color: white;
+    border: 1px solid #777;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header img {
+    max-height: 70px;
+    width: auto;
+    display: block;
+}
+
+.history-section {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.history-img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adventures-section {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+}
+
+.adventures-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.adventure-card {
+    flex: 1;
+    margin: 0;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.adventure-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.adventure-card figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #eeeeee;
+    color: black;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    display: block;
 }
