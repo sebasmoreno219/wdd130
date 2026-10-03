@@ -31,16 +31,16 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
-nav,
+/* nav,
 p,
 section,
 article {
     margin: 16px;
     padding: 8px;
-}
+} */
 
 .socialmedia a {
     text-decoration: none;
@@ -63,33 +63,34 @@ article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    /* opacity: 0.7; */
+    /* background-color: var(--accent1-color); */
+    /* color: #fff; */
 }
 
 h2 {
     text-align: center;
-    background-color: var(--accent1-color);
-    padding: 5px;
-    color: #fff;
+    margin-bottom: 25px;
+    /* background-color: var(--accent1-color); */
+    padding: 0;
+    /* color: var(--primary-color); */
 }
 
-.hero article {
+/* .hero article {
     position: absolute;
     bottom: 10px;
     width: 75%;
     padding: 1px;
     text-align: center;
     background-color: aliceblue;
-}
+} */
 
-.hero article img {
+/* .hero article img {
     border: black;
     margin: 8px;
     float: right;
     width: 125px;
-}
+} */
 
 header {
     display: grid;
@@ -123,58 +124,58 @@ header img {
     display: block;
 }
 
-.history-section {
+/* .history-section {
     padding: 10px 0px;
     text-align: center;
-}
+} */
 
-.history-container {
+/* .history-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-items: center;
     margin-top: 20px;
-}
+} */
 
-.history-img-box img {
+/* .history-img-box img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-}
+} */
 
-.adventures-section {
+/* .adventures-section {
     padding: 30px 20px;
     background-color: #f9f9f9;
-}
+} */
 
-.adventures-gallery {
+/* .adventures-gallery {
     display: flex;
     justify-content: space-between;
     gap: 15px;
     margin-top: 10px;
     padding: 0;
-}
+} */
 
-.adventure-card {
+/* .adventure-card {
     flex: 1;
     margin: 0;
     background: white;
     padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
-}
+} */
 
-.adventure-card img {
+/* .adventure-card img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-}
+} */
 
-.adventure-card figcaption {
+/* .adventure-card figcaption {
     margin-top: 10px;
     font-weight: bold;
     font-size: 0.9rem;
-}
+} */
 
 footer {
     display: flex;
@@ -194,4 +195,245 @@ footer {
     width: 30px;
     height: 30px;
     display: block;
+}
+
+/* Added to the rafting css */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    /* width: 840px; */
+    margin: 20px auto;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+}
+
+.map p {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: var(--accent1-color);
+}
+
+.map iframe,
+.map img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav,
+section {
+    margin: 16px;
+    padding: 8px;
+}
+
+.profiles-section {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+}
+
+.profiles-section h2 {
+    background-color: transparent;
+    color: var(--accent1-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profiles-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.profile-card {
+    flex: 1;
+    margin: 0;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Contact Us section */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    /* color: #333; */
+    /* background-color: #fff; */
+}
+
+/* header {
+    margin: 0 auto;
+    width: 650px;
+} */
+
+/* h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+} */
+
+form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid #e0e0e0; */
+    /* border-radius: 10px; */
+    /* background-color: #eee; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+fieldset {
+    margin: 1.5rem 0;
+    /* border: 1px solid #e0e0e0; */
+    padding: 1.5rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+    /* color: navy; */
+    color: #333;
+    font-family: Merriweather, Georgia, serif;
+    font-size: 1.3em;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Merriweather, Georgia, serif;
+    /* margin: 1rem; */
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+    /* margin: 1rem; */
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    justify-self: center;
+    margin: 2rem 0 1rem 0;
+    background-color: var(--accent1-color);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+/* footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+} */
+
+.form-item {
+    display: grid;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.column1 {
+    grid-template-columns: 4fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 10px;
+    margin: 0.5rem 0;
+}
+
+.column2 label {
+    text-align: left;
+    padding-right: 0;
+}
+
+/* Adding something more to the form*/
+.checkbox-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.checkbox-row label {
+    text-align: left;
+    font-size: 0.95em;
+}
+
+.textarea-row {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    margin: 1rem 0;
+}
+
+.textarea-row label {
+    text-align: left;
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 0.5rem;
+    resize: none;
 }

@@ -2,11 +2,129 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafting Passion</title>
-    <meta name="description"
-      content="White Whater Rafting is a Company that allows you to enjoy the nature and have a good moment with family and friends.">
-    <meta name="author" content="Sebastian Moreno">
-    <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Rafting Passion</title>
+  <meta name="description" content="In this page you'll find all the information to contact us.">
+  <meta name="author" content="Sebastian Moreno">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/z-raftingcompas.webp" alt="Rafting Logo.">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="company-info">
+    <div class="hero">
+      <h1>Company Information | Rafting Passion</h1>
+
+      <p>Petrolera Avenue</p>
+      <p>Cercado, Cochabamba</p>
+      <p>+591 77788899</p>
+      <p>info@raftingpassion.com</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="contact-container">
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60868.93622037303!2d-66.05387912762822!3d-17.540492221610112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbo!4v1790979428285!5m2!1sen!2sbo"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <p>Petrolera Avenue, Cercado, Cochabamba</p>
+      </section>
+
+      <form>
+
+        <div class="form-item column2">
+          <label for="user_name">Name:</label>
+          <input type="text" id="user_name" name="user_name" required placeholder="Your name">
+        </div>
+
+        <div class="form-item column2">
+          <label for="useremail">Email:</label>
+          <input type="email" id="useremail" name="useremail" required
+            placeholder="username@example.com">
+        </div>
+
+        <div class="form-item column2">
+          <label for="purpose">Message Purpose</label>
+          <select name="purpose" id="purpose">
+            <option value="general">General Inquiry</option>
+            <option value="reservation">Reservation Question</option>
+            <option value="complaint">Website Suggestion</option>
+          </select>
+        </div>
+
+        <div class="form-item textarea-row">
+          <label for="msg">Message</label>
+          <textarea name="msg" id="msg" rows="4" required placeholder="Type here"></textarea>
+        </div>
+
+        <div class="checkbox-row">
+          <label for="subscribe">Please Subscribe me to the monthly newsletter</label>
+          <input type="checkbox" id="subscribe" name="subscribe">
+        </div>
+
+        <button type="submit">Get in Touch!</button>
+      </form>
+    </div>
+
+
+    <section class="profiles-section">
+      <h2>We Are Here to Serve You</h2>
+      <div class="profiles-gallery">
+
+        <figure class="profile-card">
+          <img src="images/profile1.jpg" alt="Mannager">
+          <figcaption>Mannager</figcaption>
+        </figure>
+
+        <figure class="profile-card">
+          <img src="images/profile2.jpg" alt="Marketing">
+          <figcaption>Marketing</figcaption>
+        </figure>
+
+        <figure class="profile-card">
+          <img src="images/profile3.jpg" alt="Secretary">
+          <figcaption>Secretary</figcaption>
+        </figure>
+
+        <figure class="profile-card">
+          <img src="images/profile4.jpg" alt="Turistic Guide">
+          <figcaption>Turistic Guide</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2026 | Rafting Passion | Sebastian Moreno</p>
+    <nav class="socialmedia">
+      <a href="https://facebbok.com">
+        <img src="images/facebook-logo.webp" alt="Facebook Logo">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram-logo.webp" alt="Instagram Logo">
+      </a>
+      <a href="https://linkedin.com">
+        <img src="images/linkedin-logo.webp" alt="LinkedIn Logo">
+      </a>
+    </nav>
+  </footer>
+</body>
+
+</html>
