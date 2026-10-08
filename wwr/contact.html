@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Rafting Passion</title>
-  <meta name="description" content="In this page you'll find all the information to contact us.">
+  <meta name="description"
+    content="In this page you'll find the direction of our office and all the information to comunicate with us. Also, you'll find a form for suggestions.">
   <meta name="author" content="Sebastian Moreno">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -30,11 +31,12 @@
     <section class="company-info">
       <div class="hero">
         <h1>Company Information | Rafting Passion</h1>
-
-        <p>Petrolera Avenue</p>
-        <p>Cercado, Cochabamba</p>
-        <p>+591 77788899</p>
-        <p>info@raftingpassion.com</p>
+        <div class="contact-info">
+          <p>Petrolera Avenue</p>
+          <p>Cercado, Cochabamba</p>
+          <p>+591 77788899</p>
+          <p>info@raftingpassion.com</p>
+        </div>
       </div>
     </section>
 
@@ -62,22 +64,24 @@
 
         <div class="form-item column2">
           <fieldset class="purpose-group">
-            <legend>Message Purpose</legend>
+            <h3>Message Purpose</h3>
+            <div class="radio-button">
+              <label>
+                <input type="radio" name="purpose" id="general" value="general">
+                General Inquiry
+              </label>
 
-            <label>
-              <input type="radio" name="purpose" id="general" value="general" checked>
-              General Inquiry
-            </label>
+              <label>
+                <input type="radio" name="purpose" id="reservation" value="reservation">
+                Reservation Question
+              </label>
 
-            <label>
-              <input type="radio" name="purpose" id="reservation" value="reservation">
-              Reservation Question
-            </label>
+              <label>
+                <input type="radio" name="purpose" id="suggestion" value="suggestion">
+                Website Suggestion
+              </label>
+            </div>
 
-            <label>
-              <input type="radio" name="purpose" id="suggestion" value="suggestion">
-              Website Suggestion
-            </label>
           </fieldset>
         </div>
 
@@ -101,17 +105,17 @@
       <div class="profiles-gallery">
 
         <figure class="profile-card">
-          <img src="images/profile1.jpg" alt="Manager">
+          <img src="images/profile1.jpg" alt="General Manager">
           <figcaption>Manager</figcaption>
         </figure>
 
         <figure class="profile-card">
-          <img src="images/profile2.jpg" alt="Marketing">
+          <img src="images/profile2.jpg" alt="Marketing Specialist">
           <figcaption>Marketing</figcaption>
         </figure>
 
         <figure class="profile-card">
-          <img src="images/profile3.jpg" alt="Secretary">
+          <img src="images/profile3.jpg" alt="Main Secretary">
           <figcaption>Secretary</figcaption>
         </figure>
 

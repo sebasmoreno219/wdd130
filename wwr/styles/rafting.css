@@ -60,7 +60,7 @@ article {
 }
 
 .hero h1 {
-    position: absolute;
+    position: relative;
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -211,6 +211,7 @@ footer {
 .map {
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
     /* justify-content: flex-start; */
 }
 
@@ -316,18 +317,49 @@ form {
     align-items: center;
 }
 
+.company-info {
+    text-align: center;
+    margin-top: 0;
+}
+
+.purpose-group {
+    display: flex;
+    justify-content: center;
+}
+
+.radio-button {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 100px;
+    text-align: right;
+}
+
+/* .contact-info p {
+    margin-top: 50px;
+} */
+
 fieldset {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin: 1.5rem 0;
-    /* border: 1px solid #e0e0e0; */
+    border: none;
     padding: 1.5rem;
 }
 
-legend {
+input[type="radio"] {
+    margin: 5px;
+}
+
+h3 {
+    margin-top: 80px;
+    /* display: flex; */
+    text-align: left;
     padding: 0 0.5rem;
     /* color: navy; */
     color: #333;
     font-family: Merriweather, Georgia, serif;
-    font-size: 1.3em;
+    font-size: 1rem;
 }
 
 label,
