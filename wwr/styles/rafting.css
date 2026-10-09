@@ -1,6 +1,14 @@
+/* ...
+...
+--- GENERAL SECTION ---
+...
+... */
+
 :root {
     --primary-color: #055a05;
+    --secondary-color: #fff;
     --accent1-color: #264653;
+    --accent2-color: #719fb4;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -29,77 +37,18 @@ footer {
     margin: 0 auto;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
-}
-
-/* nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-} */
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.hero {
-    position: relative;
-    /* align-items: center; */
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.hero h1 {
-    position: relative;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    /* opacity: 0.7; */
-    /* background-color: var(--accent1-color); */
-    /* color: #fff; */
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 25px;
-    /* background-color: var(--accent1-color); */
-    padding: 0;
-    /* color: var(--primary-color); */
-}
-
-/* .hero article {
-    position: absolute;
-    bottom: 10px;
-    width: 75%;
-    padding: 1px;
-    text-align: center;
-    background-color: aliceblue;
-} */
-
-/* .hero article img {
-    border: black;
-    margin: 8px;
-    float: right;
-    width: 125px;
-} */
-
 header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     padding: 10px 40px;
     background-color: var(--accent1-color);
+}
+
+header img {
+    max-height: 70px;
+    width: auto;
+    display: block;
 }
 
 .nav-links {
@@ -112,7 +61,7 @@ header {
 }
 
 .nav-links a {
-    background-color: white;
+    background-color: var(--secondary-color);
     border: 1px solid #777;
     padding: 8px 16px;
     text-decoration: none;
@@ -120,72 +69,21 @@ header {
     font-weight: bold;
 }
 
-header img {
-    max-height: 70px;
-    width: auto;
-    display: block;
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
 }
-
-/* .history-section {
-    padding: 10px 0px;
-    text-align: center;
-} */
-
-/* .history-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    align-items: center;
-    margin-top: 20px;
-} */
-
-/* .history-img-box img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-} */
-
-/* .adventures-section {
-    padding: 30px 20px;
-    background-color: #f9f9f9;
-} */
-
-/* .adventures-gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    margin-top: 10px;
-    padding: 0;
-} */
-
-/* .adventure-card {
-    flex: 1;
-    margin: 0;
-    background: white;
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
-} */
-
-/* .adventure-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-} */
-
-/* .adventure-card figcaption {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 0.9rem;
-} */
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #eeeeee;
-    color: black;
+    background-color: aliceblue;
+    color: var(--accent1-color);
 }
 
 .socialmedia {
@@ -199,12 +97,172 @@ footer {
     display: block;
 }
 
-/* Added to the rafting css */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* ...
+...
+--- HOME SECTION ---
+...
+... */
+
+/* ...
+...
+--- ABOUT US SECTION ---
+...
+... */
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+.hero {
+    position: relative;
+    align-items: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: var(--accent1-color);
+    padding: 0;
+    color: var(--secondary-color);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10px;
+    width: 75%;
+    padding: 1px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.hero article img {
+    border: black;
+    margin: 8px;
+    float: right;
+    width: 125px;
+}
+
+.history-section {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.history-img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adventures-section {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+}
+
+.adventures-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.adventure-card {
+    flex: 1;
+    margin: 0;
+    background: var(--secondary-color);
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.adventure-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.adventure-card figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* ...
+...
+--- TRIPS SECTION ---
+...
+... */
+
+/* ...
+...
+--- CONTACT US SECTION ---
+...
+... */
+
+.page-title h1 {
+    position: relative;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+
+.page-title {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .contact-container {
+    background-color: aliceblue;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    /* width: 840px; */
     margin: 20px auto;
 }
 
@@ -212,7 +270,6 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
-    /* justify-content: flex-start; */
 }
 
 .map p {
@@ -230,22 +287,18 @@ footer {
     border-radius: 5px;
 }
 
-nav,
-section {
-    margin: 16px;
-    padding: 8px;
-}
-
 .profiles-section {
     padding: 30px 20px;
     background-color: #f9f9f9;
 }
 
 .profiles-section h2 {
-    background-color: transparent;
-    color: var(--accent1-color);
+    font-family: var(--heading-font);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    background-color: var(--accent1-color);
+    padding: 0;
+    color: var(--secondary-color);
 }
 
 .profiles-gallery {
@@ -272,43 +325,18 @@ section {
     border-radius: 4px;
 }
 
-/* Contact Us section */
-
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-/* body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    color: #333;
-    background-color: #fff;
-} */
-
-/* header {
-    margin: 0 auto;
-    width: 650px;
-} */
-
-/* h1 {
-    margin: 1rem;
-    font-size: 1.5em;
-    color: navy;
-    text-align: center;
-} */
+.profile-card figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
 
 form {
     width: 100%;
     margin: 0;
     padding: 0;
-    /* border: 1px solid #e0e0e0; */
-    /* border-radius: 10px; */
-    /* background-color: #eee; */
     display: flex;
     flex-direction: column;
-    /* gap: 15px; */
 }
 
 .form-group {
@@ -335,10 +363,6 @@ form {
     text-align: right;
 }
 
-/* .contact-info p {
-    margin-top: 50px;
-} */
-
 fieldset {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -353,10 +377,8 @@ input[type="radio"] {
 
 h3 {
     margin-top: 80px;
-    /* display: flex; */
     text-align: left;
     padding: 0 0.5rem;
-    /* color: navy; */
     color: #333;
     font-family: Merriweather, Georgia, serif;
     font-size: 1rem;
@@ -368,13 +390,11 @@ button,
 select,
 textarea {
     font-family: Merriweather, Georgia, serif;
-    /* margin: 1rem; */
 }
 
 label {
     text-align: right;
     padding-right: 1rem;
-    /* margin: 1rem; */
 }
 
 input,
@@ -406,15 +426,6 @@ button:hover {
     background-color: var(--primary-color);
 }
 
-/* footer {
-    margin: 1rem auto 0;
-    width: 650px;
-    text-align: center;
-    font-size: 0.8em;
-    color: #777;
-    border-top: 1px solid #ccc;
-} */
-
 .form-item {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -441,7 +452,6 @@ button:hover {
     padding-right: 0;
 }
 
-/* Adding something more to the form*/
 .checkbox-row {
     display: flex;
     justify-content: center;
