@@ -352,7 +352,6 @@ h2 {
     }
 }
 
-/* Contenedor con scroll para pantallas móviles */
 .table-container {
     overflow-x: auto;
     margin: 20px 0;
@@ -361,16 +360,13 @@ h2 {
     border-radius: 8px;
 }
 
-/* Estilos generales de la tabla */
 .excursions-table {
     width: 100%;
     border-collapse: collapse;
-    /* Une los bordes de celda en una sola línea */
     background-color: #ffffff;
     text-align: left;
 }
 
-/* Estilos de la cabecera */
 .excursions-table thead tr {
     background-color: #007bff;
     color: #ffffff;
@@ -380,23 +376,18 @@ h2 {
 .excursions-table th,
 .excursions-table td {
     padding: 12px 15px;
-    /* Espaciado interno cómodo para lectura */
     border-bottom: 1px solid #dddddd;
 }
 
-/* Filas alternas de diferente color (Efecto Cebra) */
 .excursions-table tbody tr:nth-child(even) {
     background-color: #f8f9fa;
-    /* Color cian/gris suave en filas pares */
 }
 
-/* Efecto visual al pasar el ratón por encima */
 .excursions-table tbody tr:hover {
     background-color: #f1f3f5;
     cursor: pointer;
 }
 
-/* Diseño de las etiquetas de dificultad */
 .badge {
     padding: 4px 8px;
     border-radius: 4px;
