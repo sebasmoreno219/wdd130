@@ -322,6 +322,104 @@ h2 {
 ...
 ... */
 
+.carrusel-contenedor {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.carrusel-track {
+    display: flex;
+    width: max-content;
+    animation: desplazar 20s linear infinite;
+}
+
+.carrusel-track img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+@keyframes desplazar {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Contenedor con scroll para pantallas móviles */
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* Estilos generales de la tabla */
+.excursions-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Une los bordes de celda en una sola línea */
+    background-color: #ffffff;
+    text-align: left;
+}
+
+/* Estilos de la cabecera */
+.excursions-table thead tr {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.excursions-table th,
+.excursions-table td {
+    padding: 12px 15px;
+    /* Espaciado interno cómodo para lectura */
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Filas alternas de diferente color (Efecto Cebra) */
+.excursions-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+    /* Color cian/gris suave en filas pares */
+}
+
+/* Efecto visual al pasar el ratón por encima */
+.excursions-table tbody tr:hover {
+    background-color: #f1f3f5;
+    cursor: pointer;
+}
+
+/* Diseño de las etiquetas de dificultad */
+.badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge.easy {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.badge.medium {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.badge.hard {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
 /* ...
 ...
 --- CONTACT US SECTION ---
